@@ -1,0 +1,48 @@
+.messages {
+	display: flex;
+	flex-direction: column-reverse;
+	row-gap: 20px;
+	overflow-x: auto;
+}
+
+.message {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.text {
+	padding: 10px;
+	border-radius: 12px;
+	font-size: 15px;
+	color: #fff;
+}
+
+.me {
+	align-self: flex-end;
+}
+
+.me .text {
+	background: #0d49d7;
+}
+
+.me .other {
+	font-size: 14px;
+	color: rgb(176, 176, 176);
+	padding-right: 10px;
+}
+
+.other {
+	align-self: flex-start;
+}
+
+.other .text {
+	background: #514c4c;
+}
+
+.other .other {
+	font-size: 14px;
+	color: rgb(176, 176, 176);
+	padding-left: 10px;
+}

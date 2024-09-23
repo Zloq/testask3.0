@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-emphasis: none;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	outline: none;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(185, 148, 0);
+	background-position: center;
+	background-size: cover;
+}
+
+.Form_Box {
+	position: relative;
+	width: 400px;
+	height: 450px;
+	background: rgb(20, 20, 20, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+}
+
+.Input_Box {
+	position: relative;
+	margin: 30px 0;
+	width: 310px;
+	border-bottom: 2px solid #fff;
+}
+
+.Input_Box label {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1em;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+input:focus ~ label,
+input:focus ~ :valid {
+	top: -5px;
+}
+
+.Input_Box input {
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0 35px 0 5px;
+	color: #fff;
+}
+
+button {
+	width: 100%;
+	border-radius: 40px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 600;
+	font-family: inherit;
+	background-color: #1a1a1a;
+	color: #f9f9f9;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+button:hover {
+	border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
